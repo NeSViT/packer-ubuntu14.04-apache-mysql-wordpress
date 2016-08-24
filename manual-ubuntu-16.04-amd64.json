@@ -1,0 +1,20 @@
+{	
+	"_comment": "VARIABLES",
+	"_comment": "compression_level: Set compression level for vagrant box on the output. Default is 6",
+	"_comment": "cpus: number of cpu",
+	"_comment": "disk_size: default 40G",
+	"_comment": "headless: false -  while build process the packer will open virtual-box console and shown user the process of build, if true the console won't be open",
+	"variables": {
+		"compression_level": "6",
+		"cpus": "1",
+		"disk_size": "40000",
+    	"headless": "false",
+    	"iso_checksum": "29a8b9009509b39d542ecb229787cdf48f05e739a932289de9e9858d7c487c80",
+    	"iso_checksum_type": "sha256",
+    	"memory": "512",
+    	"mirror": "http://releases.ubuntu.com",
+    	"ssh_timeout": "60m"
+	}
+
+
+}

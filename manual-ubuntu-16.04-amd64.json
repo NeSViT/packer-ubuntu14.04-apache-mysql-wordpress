@@ -1,4 +1,5 @@
 {	
+
 	"_comment": "====================================VARIABLES=================================",
 	"_comment": "VARIABLES",
 	"_comment": "compression_level: Set compression level for vagrant box on the output. Default is 6",
@@ -88,13 +89,8 @@
 
 
 	"_comment": "====================================PROVISIONERS==============================",
-	"_comment": "type: ",
-	"_comment": "",
-	"_comment": "",
-	"_comment": "",
-	"_comment": "",
-	"_comment": "",
-	"_comment": "",
+	"_comment": "type: using bash",
+	"_comment": "scripts: scripts for deploy",
 	
 	"provisioners": [
 		"type": "shell",
@@ -110,7 +106,20 @@
 
 	],
 
-	"_comment": "====================================/PROVISIONERS============================="
+	"_comment": "====================================/PROVISIONERS=============================",
 	
+	
+	"_comment": "====================================POST-PROCESSORS==========================",
+	"_comment": "",
+	"_comment": "",
+	"_comment": "",
+	
+	"post-processors": [{
+		"type": "vagrant",
+		"compression_leve": "{{user `compression_level`}}",
+		"output": "ubuntu-16.04-amd-{{.Provider}}.box"
+	}],
 
+	"_comment": "====================================/POST-PROCESSORS=========================="
+	
 }

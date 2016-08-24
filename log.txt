@@ -1,0 +1,309 @@
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso[0m
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04.1-server-amd64.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8535[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 3371)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --memory 1024[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --cpus 1[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 5s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (4.2.36)[0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/apt.sh[0m
+[0;32m    virtualbox-iso: + sudo apt-get update[0m
+[0;32m    virtualbox-iso: Err:1 http://security.ubuntu.com/ubuntu xenial-security InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'security.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:2 http://us.archive.ubuntu.com/ubuntu xenial InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:3 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:4 http://us.archive.ubuntu.com/ubuntu xenial-backports InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial-updates/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial-backports/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/xenial-security/InRelease  Temporary failure resolving 'security.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Some index files failed to download. They have been ignored, or old ones used instead.[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y apache2[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following additional packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2-bin apache2-data apache2-utils libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libgdbm3 liblua5.1-0 libperl5.22[0m
+[0;32m    virtualbox-iso: perl perl-modules-5.22 rename ssl-cert[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom ufw[0m
+[0;32m    virtualbox-iso: perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl make[0m
+[0;32m    virtualbox-iso: openssl-blacklist[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libgdbm3 liblua5.1-0 libperl5.22[0m
+[0;32m    virtualbox-iso: perl perl-modules-5.22 rename ssl-cert[0m
+[0;32m    virtualbox-iso: 0 upgraded, 15 newly installed, 0 to remove and 14 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 7,832 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 45.8 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Err:1 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgdbm3 amd64 1.8.3-13.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:2 http://us.archive.ubuntu.com/ubuntu xenial/main i386 perl-modules-5.22 all 5.22.1-9[0m
+[0;32m    virtualbox-iso: Err:3 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libperl5.22 amd64 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:4 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl amd64 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:5 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:6 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:7 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:8 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:9 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:10 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:12 http://us.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:13 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2 amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:14 http://us.archive.ubuntu.com/ubuntu xenial/main i386 rename all 0.20-4[0m
+[0;32m    virtualbox-iso: Ign:15 http://us.archive.ubuntu.com/ubuntu xenial/main i386 ssl-cert all 1.0.37[0m
+[0;32m    virtualbox-iso: Err:2 http://us.archive.ubuntu.com/ubuntu xenial/main i386 perl-modules-5.22 all 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:10 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:12 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Err:14 http://us.archive.ubuntu.com/ubuntu xenial/main i386 rename all 0.20-4[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:15 http://us.archive.ubuntu.com/ubuntu xenial/main i386 ssl-cert all 1.0.37[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:13 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2 amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:12 http://security.ubuntu.com/ubuntu xenial-security/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:12 http://security.ubuntu.com/ubuntu xenial-security/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/g/gdbm/libgdbm3_1.8.3-13.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/perl-modules-5.22_5.22.1-9_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/libperl5.22_5.22.1-9_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr/libapr1_1.5.2-3_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1-ldap_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/lua5.1/liblua5.1-0_5.1.5-8ubuntu1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-bin_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-utils_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-data_2.4.18-2ubuntu3.1_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/r/rename/rename_0.20-4_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/s/ssl-cert/ssl-cert_1.0.37_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32m==> virtualbox-iso: Deleting output directory...[0m
+[1;31mBuild 'virtualbox-iso' errored: Script exited with non-zero exit status: 100[0m
+
+==> Some builds didn't complete successfully and had errors:
+--> virtualbox-iso: Script exited with non-zero exit status: 100
+
+==> Builds finished but no artifacts were created.
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso[0m
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04.1-server-amd64.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8891[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 4200)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --memory 1024[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --cpus 1[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 5s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (4.2.36)[0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/apt.sh[0m
+[0;32m    virtualbox-iso: + sudo apt-get update[0m
+[0;32m    virtualbox-iso: Err:1 http://security.ubuntu.com/ubuntu xenial-security InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'security.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:2 http://us.archive.ubuntu.com/ubuntu xenial InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:3 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:4 http://us.archive.ubuntu.com/ubuntu xenial-backports InRelease[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial-updates/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/xenial-backports/InRelease  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/xenial-security/InRelease  Temporary failure resolving 'security.ubuntu.com'[0m
+[0;32m    virtualbox-iso: W: Some index files failed to download. They have been ignored, or old ones used instead.[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y apache2[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following additional packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2-bin apache2-data apache2-utils libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libgdbm3 liblua5.1-0 libperl5.22[0m
+[0;32m    virtualbox-iso: perl perl-modules-5.22 rename ssl-cert[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom ufw[0m
+[0;32m    virtualbox-iso: perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl make[0m
+[0;32m    virtualbox-iso: openssl-blacklist[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libgdbm3 liblua5.1-0 libperl5.22[0m
+[0;32m    virtualbox-iso: perl perl-modules-5.22 rename ssl-cert[0m
+[0;32m    virtualbox-iso: 0 upgraded, 15 newly installed, 0 to remove and 14 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 7,832 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 45.8 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Err:1 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libgdbm3 amd64 1.8.3-13.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:2 http://us.archive.ubuntu.com/ubuntu xenial/main i386 perl-modules-5.22 all 5.22.1-9[0m
+[0;32m    virtualbox-iso: Err:3 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libperl5.22 amd64 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:4 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 perl amd64 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:5 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:6 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:7 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:8 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:9 http://us.archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:10 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:12 http://us.archive.ubuntu.com/ubuntu xenial-updates/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:13 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2 amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Ign:14 http://us.archive.ubuntu.com/ubuntu xenial/main i386 rename all 0.20-4[0m
+[0;32m    virtualbox-iso: Ign:15 http://us.archive.ubuntu.com/ubuntu xenial/main i386 ssl-cert all 1.0.37[0m
+[0;32m    virtualbox-iso: Err:2 http://us.archive.ubuntu.com/ubuntu xenial/main i386 perl-modules-5.22 all 5.22.1-9[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Ign:12 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Err:14 http://us.archive.ubuntu.com/ubuntu xenial/main i386 rename all 0.20-4[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:15 http://us.archive.ubuntu.com/ubuntu xenial/main i386 ssl-cert all 1.0.37[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:10 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:11 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:13 http://security.ubuntu.com/ubuntu xenial-security/main amd64 apache2 amd64 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:12 http://security.ubuntu.com/ubuntu xenial-security/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: Err:12 http://security.ubuntu.com/ubuntu xenial-security/main i386 apache2-data all 2.4.18-2ubuntu3.1[0m
+[0;32m    virtualbox-iso: Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/g/gdbm/libgdbm3_1.8.3-13.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/perl-modules-5.22_5.22.1-9_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/libperl5.22_5.22.1-9_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr/libapr1_1.5.2-3_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/a/apr-util/libaprutil1-ldap_1.5.4-1build1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/l/lua5.1/liblua5.1-0_5.1.5-8ubuntu1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-bin_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-utils_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2-data_2.4.18-2ubuntu3.1_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/a/apache2/apache2_2.4.18-2ubuntu3.1_amd64.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/r/rename/rename_0.20-4_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Failed to fetch http://us.archive.ubuntu.com/ubuntu/pool/main/s/ssl-cert/ssl-cert_1.0.37_all.deb  Temporary failure resolving 'us.archive.ubuntu.com'[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32m==> virtualbox-iso: Deleting output directory...[0m
+[1;31mBuild 'virtualbox-iso' errored: Script exited with non-zero exit status: 100[0m
+
+==> Some builds didn't complete successfully and had errors:
+--> virtualbox-iso: Script exited with non-zero exit status: 100
+
+==> Builds finished but no artifacts were created.
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso[0m
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04.1-server-amd64.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8297[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 2353)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --memory 1024[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-16.04-amd64 --cpus 1[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 5s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (4.2.36)[0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+[1;32m==> virtualbox-iso: Gracefully halting virtual machine...[0m
+[1;32m==> virtualbox-iso: Preparing to export machine...[0m
+[0;32m    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 2353)[0m
+[1;32m==> virtualbox-iso: Exporting virtual machine...[0m
+[0;32m    virtualbox-iso: Executing: export packer-ubuntu-16.04-amd64 --output output-ubuntu-16.04-amd64-virtualbox-iso/packer-ubuntu-16.04-amd64.ovf[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32m==> virtualbox-iso: Running post-processor: vagrant[0m
+[1;32m==> virtualbox-iso (vagrant): Creating Vagrant box for 'virtualbox' provider[0m
+[0;32m    virtualbox-iso (vagrant): Copying from artifact: output-ubuntu-16.04-amd64-virtualbox-iso/packer-ubuntu-16.04-amd64-disk1.vmdk[0m
+[0;32m    virtualbox-iso (vagrant): Copying from artifact: output-ubuntu-16.04-amd64-virtualbox-iso/packer-ubuntu-16.04-amd64.ovf[0m
+[0;32m    virtualbox-iso (vagrant): Renaming the OVF to box.ovf...[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: Vagrantfile[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: box.ovf[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: metadata.json[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: packer-ubuntu-16.04-amd64-disk1.vmdk[0m
+[1;32mBuild 'virtualbox-iso' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox-iso: 'virtualbox' provider box: ubuntu-16.04-amd-virtualbox.box

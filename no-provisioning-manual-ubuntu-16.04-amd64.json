@@ -16,10 +16,10 @@
 		"cpus": "1",
 		"disk_size": "40000",
     	"headless": "false",
-		"iso_checksum": "23e97cd5d4145d4105fbf29878534049",
+		"iso_checksum": "d2d939ca0e65816790375f6826e4032f",
     	"iso_checksum_type": "md5",
 		"memory": "1024",
-    	"mirror": "/home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04-server-amd64.iso",
+    	"mirror": "/home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04.1-server-amd64.iso",
     	"ssh_timeout": "60m"
 	},
 	
@@ -92,19 +92,7 @@
 	"_comment": "type: using bash",
 	"_comment": "scripts: scripts for deploy",
 	
-	"provisioners": [{
-		"type": "shell",
-		
-		"scripts": [
-			"scripts/ubuntu/apt.sh",
-			"scripts/ubuntu/virtualbox.sh",
-			"scripts/common/vagrant.sh",
-			"scripts/common/sshd.sh",
-			"scripts/ubuntu/cleanup.sh",
-			"scripts/common/minimize.sh"
-		] 
-
-	}],
+	
 
 	"_comment": "====================================/PROVISIONERS=============================",
 	

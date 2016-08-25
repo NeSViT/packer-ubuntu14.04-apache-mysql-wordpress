@@ -12,15 +12,15 @@
 	"_comment": "",
 	
 	"variables": {
-		"compression_level": "6",
-		"cpus": "1",
-		"disk_size": "40000",
+		"compression_level": "1",
+		"cpus": "2",
+		"disk_size": "10000",
     	"headless": "false",
 		"iso_checksum": "23e97cd5d4145d4105fbf29878534049",
     	"iso_checksum_type": "md5",
-		"memory": "1024",
+		"memory": "2048",
     	"mirror": "/home/nesvits/Documents/Web-academy/soft/iso/ubuntu-16.04-server-amd64.iso",
-    	"ssh_timeout": "60m"
+    	"ssh_timeout": "40m"
 	},
 	
 	"_comment": "====================================/VARIABLES================================",
@@ -98,6 +98,8 @@
 		"scripts": [
 			"scripts/ubuntu/apt.sh",
 			"scripts/ubuntu/virtualbox.sh",
+			"scripts/custom/webserver_config.sh",
+			
 			"scripts/common/vagrant.sh",
 			"scripts/common/sshd.sh",
 			"scripts/ubuntu/cleanup.sh",

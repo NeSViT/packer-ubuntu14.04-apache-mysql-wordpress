@@ -2,6 +2,9 @@
 
 set -x
 
+echo "UPDATE REPO"
+sudo apt-get update 
+
 echo "DOWNLOAD TOOLS FOR ADD NEW REPOSITORY"
 sudo apt-get install -y software-properties-common
 
@@ -46,14 +49,6 @@ echo "SET CONFIG IN WP-CONFIG.PHP"
 sudo sed -i 's/database_name_here/wordpress/g' /var/www/WordPress/wp-config.php
 sudo sed -i 's/username_here/wordpressuser/g' /var/www/WordPress/wp-config.php
 sudo sed -i 's/password_here/password/g' /var/www/WordPress/wp-config.php
-
-echo "RESTART APACHE2"
-sudo service apache2 restart
-
-echo "CONFIGURE INSTALL.PHP PAGE AUTOMATICALLY"
-# run command from user vagrant to configure wordpress start page 
-sudo -u vagrant -i -- wp core install --path="/var/www/WordPress" --url=10.10.100.20 --title="DEVOPS START" --admin_user=nesvits --admin_password=password --admin_email=nesvits@gmail.com
-sudo -u vagrant -i -- curl http://loripsum.net/api/5 | sudo -u vagrant -i -- wp post generate --path="/var/www/WordPress" --post_content --count=10
 
 echo "RESTART APACHE2"
 sudo service apache2 restart

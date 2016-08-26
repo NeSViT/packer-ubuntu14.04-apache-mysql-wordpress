@@ -1,0 +1,1201 @@
+[1;32mvirtualbox-iso output will be in this color.[0m
+
+[1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///usr/share/virtualbox/VBoxGuestAdditions.iso[0m
+[1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+[0;32m    virtualbox-iso: Downloading or copying: file:///home/nesvits/Documents/Web-academy/soft/iso/ubuntu-14.04.4-server-amd64.iso[0m
+[1;32m==> virtualbox-iso: Starting HTTP server on port 8447[0m
+[1;32m==> virtualbox-iso: Creating virtual machine...[0m
+[1;32m==> virtualbox-iso: Creating hard drive...[0m
+[1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 4072)[0m
+[1;32m==> virtualbox-iso: Executing custom VBoxManage commands...[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-14.04-amd64 --memory 1024[0m
+[0;32m    virtualbox-iso: Executing: modifyvm packer-ubuntu-14.04-amd64 --cpus 2[0m
+[1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+[1;32m==> virtualbox-iso: Waiting 5s for boot...[0m
+[1;32m==> virtualbox-iso: Typing the boot command...[0m
+[1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+[1;32m==> virtualbox-iso: Connected to SSH![0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox version info (4.2.36)[0m
+[1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/virtualbox.sh[0m
+[0;32m    virtualbox-iso: + '[' virtualbox-iso '!=' virtualbox-iso ']'[0m
+[0;32m    virtualbox-iso: + sudo apt-get -y install dkms[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: binutils cpp cpp-4.8 fakeroot gcc gcc-4.8 gcc-4.8-base libasan0 libatomic1[0m
+[0;32m    virtualbox-iso: libc-dev-bin libc6 libc6-dev libcloog-isl4 libfakeroot libgcc-4.8-dev[0m
+[0;32m    virtualbox-iso: libgmp10 libgomp1 libisl10 libitm1 libmpc3 libmpfr4 libquadmath0 libstdc++6[0m
+[0;32m    virtualbox-iso: libtsan0 linux-libc-dev make manpages manpages-dev patch[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: binutils-doc cpp-doc gcc-4.8-locales dpkg-dev debhelper gcc-multilib[0m
+[0;32m    virtualbox-iso: autoconf automake1.9 libtool flex bison gdb gcc-doc gcc-4.8-multilib[0m
+[0;32m    virtualbox-iso: gcc-4.8-doc libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan0-dbg[0m
+[0;32m    virtualbox-iso: libtsan0-dbg libquadmath0-dbg glibc-doc make-doc man-browser ed[0m
+[0;32m    virtualbox-iso: diffutils-doc[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: binutils cpp cpp-4.8 dkms fakeroot gcc gcc-4.8 libasan0 libatomic1[0m
+[0;32m    virtualbox-iso: libc-dev-bin libc6-dev libcloog-isl4 libfakeroot libgcc-4.8-dev libgmp10[0m
+[0;32m    virtualbox-iso: libgomp1 libisl10 libitm1 libmpc3 libmpfr4 libquadmath0 libtsan0[0m
+[0;32m    virtualbox-iso: linux-libc-dev make manpages manpages-dev patch[0m
+[0;32m    virtualbox-iso: The following packages will be upgraded:[0m
+[0;32m    virtualbox-iso: gcc-4.8-base libc6 libstdc++6[0m
+[0;32m    virtualbox-iso: 3 upgraded, 27 newly installed, 0 to remove and 51 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 25.3 MB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 72.9 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8-base amd64 4.8.4-2ubuntu1~14.04.3 [16.2 kB][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libstdc++6 amd64 4.8.4-2ubuntu1~14.04.3 [259 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libc6 amd64 2.19-0ubuntu6.9 [4,717 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libasan0 amd64 4.8.4-2ubuntu1~14.04.3 [63.1 kB][0m
+[0;32m    virtualbox-iso: Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libatomic1 amd64 4.8.4-2ubuntu1~14.04.3 [8,636 B][0m
+[0;32m    virtualbox-iso: Get:6 http://us.archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB][0m
+[0;32m    virtualbox-iso: Get:7 http://us.archive.ubuntu.com/ubuntu/ trusty/main libisl10 amd64 0.12.2-1 [419 kB][0m
+[0;32m    virtualbox-iso: Get:8 http://us.archive.ubuntu.com/ubuntu/ trusty/main libcloog-isl4 amd64 0.18.2-1 [57.5 kB][0m
+[0;32m    virtualbox-iso: Get:9 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libgomp1 amd64 4.8.4-2ubuntu1~14.04.3 [23.1 kB][0m
+[0;32m    virtualbox-iso: Get:10 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libitm1 amd64 4.8.4-2ubuntu1~14.04.3 [28.5 kB][0m
+[0;32m    virtualbox-iso: Get:11 http://us.archive.ubuntu.com/ubuntu/ trusty/main libmpfr4 amd64 3.1.2-1 [203 kB][0m
+[0;32m    virtualbox-iso: Get:12 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libquadmath0 amd64 4.8.4-2ubuntu1~14.04.3 [126 kB][0m
+[0;32m    virtualbox-iso: Get:13 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libtsan0 amd64 4.8.4-2ubuntu1~14.04.3 [94.9 kB][0m
+[0;32m    virtualbox-iso: Get:14 http://us.archive.ubuntu.com/ubuntu/ trusty/main libmpc3 amd64 1.0.1-1ubuntu1 [38.4 kB][0m
+[0;32m    virtualbox-iso: Get:15 http://us.archive.ubuntu.com/ubuntu/ trusty/main manpages all 3.54-1ubuntu1 [627 kB][0m
+[0;32m    virtualbox-iso: Get:16 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main binutils amd64 2.24-5ubuntu14.1 [2,081 kB][0m
+[0;32m    virtualbox-iso: Get:17 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main cpp-4.8 amd64 4.8.4-2ubuntu1~14.04.3 [4,595 kB][0m
+[0;32m    virtualbox-iso: Get:18 http://us.archive.ubuntu.com/ubuntu/ trusty/main cpp amd64 4:4.8.2-1ubuntu6 [27.5 kB][0m
+[0;32m    virtualbox-iso: Get:19 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libgcc-4.8-dev amd64 4.8.4-2ubuntu1~14.04.3 [1,688 kB][0m
+[0;32m    virtualbox-iso: Get:20 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main gcc-4.8 amd64 4.8.4-2ubuntu1~14.04.3 [5,047 kB][0m
+[0;32m    virtualbox-iso: Get:21 http://us.archive.ubuntu.com/ubuntu/ trusty/main gcc amd64 4:4.8.2-1ubuntu6 [5,098 B][0m
+[0;32m    virtualbox-iso: Get:22 http://us.archive.ubuntu.com/ubuntu/ trusty/main make amd64 3.81-8.2ubuntu3 [119 kB][0m
+[0;32m    virtualbox-iso: Get:23 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main patch amd64 2.7.1-4ubuntu2.3 [86.4 kB][0m
+[0;32m    virtualbox-iso: Get:24 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main dkms all 2.2.0.3-1.1ubuntu5.14.04.7 [66.1 kB][0m
+[0;32m    virtualbox-iso: Get:25 http://us.archive.ubuntu.com/ubuntu/ trusty/main libfakeroot amd64 1.20-3ubuntu2 [25.4 kB][0m
+[0;32m    virtualbox-iso: Get:26 http://us.archive.ubuntu.com/ubuntu/ trusty/main fakeroot amd64 1.20-3ubuntu2 [55.0 kB][0m
+[0;32m    virtualbox-iso: Get:27 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libc-dev-bin amd64 2.19-0ubuntu6.9 [69.0 kB][0m
+[0;32m    virtualbox-iso: Get:28 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main linux-libc-dev amd64 3.13.0-93.140 [771 kB][0m
+[0;32m    virtualbox-iso: Get:29 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libc6-dev amd64 2.19-0ubuntu6.9 [1,910 kB][0m
+[0;32m    virtualbox-iso: Get:30 http://us.archive.ubuntu.com/ubuntu/ trusty/main manpages-dev all 3.54-1ubuntu1 [1,820 kB][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 25.3 MB in 1min 1s (412 kB/s)[0m
+[0;32m    virtualbox-iso: (Reading database ... 50091 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../gcc-4.8-base_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking gcc-4.8-base:amd64 (4.8.4-2ubuntu1~14.04.3) over (4.8.4-2ubuntu1~14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up gcc-4.8-base:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: (Reading database ... 50091 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libstdc++6_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libstdc++6:amd64 (4.8.4-2ubuntu1~14.04.3) over (4.8.4-2ubuntu1~14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up libstdc++6:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: (Reading database ... 50091 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libc6_2.19-0ubuntu6.9_amd64.deb ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Unpacking libc6:amd64 (2.19-0ubuntu6.9) over (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: Setting up libc6:amd64 (2.19-0ubuntu6.9) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libasan0:amd64.[0m
+[0;32m    virtualbox-iso: (Reading database ... 50091 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libasan0_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libasan0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libatomic1:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libatomic1_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libatomic1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libgmp10:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libgmp10_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libisl10:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libisl10_0.12.2-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libisl10:amd64 (0.12.2-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libcloog-isl4:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libcloog-isl4_0.18.2-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libcloog-isl4:amd64 (0.18.2-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libgomp1:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libgomp1_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libgomp1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libitm1:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libitm1_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libitm1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libmpfr4:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libmpfr4_3.1.2-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libmpfr4:amd64 (3.1.2-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libquadmath0:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libquadmath0_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libquadmath0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libtsan0:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libtsan0_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libtsan0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libmpc3:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libmpc3_1.0.1-1ubuntu1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libmpc3:amd64 (1.0.1-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package manpages.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../manpages_3.54-1ubuntu1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking manpages (3.54-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package binutils.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../binutils_2.24-5ubuntu14.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking binutils (2.24-5ubuntu14.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package cpp-4.8.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../cpp-4.8_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking cpp-4.8 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package cpp.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../cpp_4%3a4.8.2-1ubuntu6_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking cpp (4:4.8.2-1ubuntu6) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libgcc-4.8-dev:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libgcc-4.8-dev_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libgcc-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package gcc-4.8.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../gcc-4.8_4.8.4-2ubuntu1~14.04.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking gcc-4.8 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package gcc.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../gcc_4%3a4.8.2-1ubuntu6_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking gcc (4:4.8.2-1ubuntu6) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package make.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../make_3.81-8.2ubuntu3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking make (3.81-8.2ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package patch.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../patch_2.7.1-4ubuntu2.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking patch (2.7.1-4ubuntu2.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package dkms.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../dkms_2.2.0.3-1.1ubuntu5.14.04.7_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking dkms (2.2.0.3-1.1ubuntu5.14.04.7) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libfakeroot:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libfakeroot_1.20-3ubuntu2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libfakeroot:amd64 (1.20-3ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package fakeroot.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../fakeroot_1.20-3ubuntu2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking fakeroot (1.20-3ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libc-dev-bin.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libc-dev-bin_2.19-0ubuntu6.9_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libc-dev-bin (2.19-0ubuntu6.9) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package linux-libc-dev:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../linux-libc-dev_3.13.0-93.140_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking linux-libc-dev:amd64 (3.13.0-93.140) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libc6-dev:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libc6-dev_2.19-0ubuntu6.9_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libc6-dev:amd64 (2.19-0ubuntu6.9) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package manpages-dev.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../manpages-dev_3.54-1ubuntu1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking manpages-dev (3.54-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Setting up libasan0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libatomic1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Setting up libisl10:amd64 (0.12.2-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libcloog-isl4:amd64 (0.18.2-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libgomp1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libitm1:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libmpfr4:amd64 (3.1.2-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libquadmath0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libtsan0:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up libmpc3:amd64 (1.0.1-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Setting up manpages (3.54-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Setting up binutils (2.24-5ubuntu14.1) ...[0m
+[0;32m    virtualbox-iso: Setting up cpp-4.8 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up cpp (4:4.8.2-1ubuntu6) ...[0m
+[0;32m    virtualbox-iso: Setting up libgcc-4.8-dev:amd64 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up gcc-4.8 (4.8.4-2ubuntu1~14.04.3) ...[0m
+[0;32m    virtualbox-iso: Setting up gcc (4:4.8.2-1ubuntu6) ...[0m
+[0;32m    virtualbox-iso: Setting up make (3.81-8.2ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Setting up patch (2.7.1-4ubuntu2.3) ...[0m
+[0;32m    virtualbox-iso: Setting up dkms (2.2.0.3-1.1ubuntu5.14.04.7) ...[0m
+[0;32m    virtualbox-iso: Setting up libfakeroot:amd64 (1.20-3ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Setting up fakeroot (1.20-3ubuntu2) ...[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode[0m
+[0;32m    virtualbox-iso: Setting up libc-dev-bin (2.19-0ubuntu6.9) ...[0m
+[0;32m    virtualbox-iso: Setting up linux-libc-dev:amd64 (3.13.0-93.140) ...[0m
+[0;32m    virtualbox-iso: Setting up libc6-dev:amd64 (2.19-0ubuntu6.9) ...[0m
+[0;32m    virtualbox-iso: Setting up manpages-dev (3.54-1ubuntu1) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: + sudo apt-get -y install make[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: make is already the newest version.[0m
+[0;32m    virtualbox-iso: make set to manually installed.[0m
+[0;32m    virtualbox-iso: 0 upgraded, 0 newly installed, 0 to remove and 51 not upgraded.[0m
+[0;32m    virtualbox-iso: + sudo mount -o loop,ro /home/vagrant/VBoxGuestAdditions.iso /mnt/[0m
+[0;32m    virtualbox-iso: + sudo /mnt/VBoxLinuxAdditions.run[0m
+[0;32m    virtualbox-iso: Verifying archive integrity... All good.[0m
+[0;32m    virtualbox-iso: Uncompressing VirtualBox 4.2.36 Guest Additions for Linux............[0m
+[0;32m    virtualbox-iso: VirtualBox Guest Additions installer[0m
+[0;32m    virtualbox-iso: Copying additional installer modules ...[0m
+[0;32m    virtualbox-iso: Installing additional modules ...[0m
+[0;32m    virtualbox-iso: Removing existing VirtualBox DKMS kernel modules ...done.[0m
+[0;32m    virtualbox-iso: Removing existing VirtualBox non-DKMS kernel modules ...done.[0m
+[0;32m    virtualbox-iso: Building the VirtualBox Guest Additions kernel modules ...done.[0m
+[0;32m    virtualbox-iso: Doing non-kernel setup of the Guest Additions ...done.[0m
+[0;32m    virtualbox-iso: You should restart your guest to make sure the new modules are actually used[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Installing the Window System drivers[0m
+[0;32m    virtualbox-iso: Could not find the X.Org or XFree86 Window System, skipping.[0m
+[0;32m    virtualbox-iso: + :[0m
+[0;32m    virtualbox-iso: + sudo umount /mnt/[0m
+[0;32m    virtualbox-iso: + rm -f /home/vagrant/VBoxGuestAdditions.iso[0m
+[0;32m    virtualbox-iso: ++ cat /home/vagrant/.vbox_version[0m
+[0;32m    virtualbox-iso: + VBOX_VERSION=4.2.36[0m
+[0;32m    virtualbox-iso: + '[' 4.2.36 == 4.3.10 ']'[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/webserver_config.sh[0m
+[0;32m    virtualbox-iso: + echo 'UPDATE REPO'[0m
+[0;32m    virtualbox-iso: + sudo apt-get update[0m
+[0;32m    virtualbox-iso: UPDATE REPO[0m
+[0;32m    virtualbox-iso: Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB][0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty InRelease[0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com trusty-updates InRelease [65.9 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://security.ubuntu.com trusty-security/main Sources [119 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://security.ubuntu.com trusty-security/restricted Sources [4,064 B][0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports InRelease[0m
+[0;32m    virtualbox-iso: Get:5 http://security.ubuntu.com trusty-security/universe Sources [39.8 kB][0m
+[0;32m    virtualbox-iso: Get:6 http://security.ubuntu.com trusty-security/multiverse Sources [2,760 B][0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty Release.gpg[0m
+[0;32m    virtualbox-iso: Get:7 http://security.ubuntu.com trusty-security/main amd64 Packages [517 kB][0m
+[0;32m    virtualbox-iso: Get:8 http://us.archive.ubuntu.com trusty-updates/main Sources [381 kB][0m
+[0;32m    virtualbox-iso: Get:9 http://security.ubuntu.com trusty-security/restricted amd64 Packages [13.0 kB][0m
+[0;32m    virtualbox-iso: Get:10 http://security.ubuntu.com trusty-security/universe amd64 Packages [133 kB][0m
+[0;32m    virtualbox-iso: Get:11 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4,990 B][0m
+[0;32m    virtualbox-iso: Get:12 http://security.ubuntu.com trusty-security/main i386 Packages [483 kB][0m
+[0;32m    virtualbox-iso: Get:13 http://us.archive.ubuntu.com trusty-updates/restricted Sources [5,360 B][0m
+[0;32m    virtualbox-iso: Get:14 http://us.archive.ubuntu.com trusty-updates/universe Sources [162 kB][0m
+[0;32m    virtualbox-iso: Get:15 http://us.archive.ubuntu.com trusty-updates/multiverse Sources [7,137 B][0m
+[0;32m    virtualbox-iso: Get:16 http://security.ubuntu.com trusty-security/restricted i386 Packages [12.7 kB][0m
+[0;32m    virtualbox-iso: Get:17 http://security.ubuntu.com trusty-security/universe i386 Packages [133 kB][0m
+[0;32m    virtualbox-iso: Get:18 http://us.archive.ubuntu.com trusty-updates/main amd64 Packages [884 kB][0m
+[0;32m    virtualbox-iso: Get:19 http://security.ubuntu.com trusty-security/multiverse i386 Packages [5,178 B][0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/universe Translation-en[0m
+[0;32m    virtualbox-iso: Get:20 http://us.archive.ubuntu.com trusty-updates/restricted amd64 Packages [15.9 kB][0m
+[0;32m    virtualbox-iso: Get:21 http://us.archive.ubuntu.com trusty-updates/universe amd64 Packages [371 kB][0m
+[0;32m    virtualbox-iso: Get:22 http://us.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.8 kB][0m
+[0;32m    virtualbox-iso: Get:23 http://us.archive.ubuntu.com trusty-updates/main i386 Packages [846 kB][0m
+[0;32m    virtualbox-iso: Get:24 http://us.archive.ubuntu.com trusty-updates/restricted i386 Packages [15.6 kB][0m
+[0;32m    virtualbox-iso: Get:25 http://us.archive.ubuntu.com trusty-updates/universe i386 Packages [372 kB][0m
+[0;32m    virtualbox-iso: Get:26 http://us.archive.ubuntu.com trusty-updates/multiverse i386 Packages [15.2 kB][0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/universe Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty Release[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe Translation-en[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/main Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/multiverse Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/restricted Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/universe Translation-en_US[0m
+[0;32m    virtualbox-iso: Fetched 4,688 kB in 23s (201 kB/s)[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: + echo 'DOWNLOAD TOOLS FOR ADD NEW REPOSITORY'[0m
+[0;32m    virtualbox-iso: DOWNLOAD TOOLS FOR ADD NEW REPOSITORY[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y software-properties-common[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: libcurl3-gnutls python3-pycurl python3-software-properties[0m
+[0;32m    virtualbox-iso: unattended-upgrades xz-utils[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: libcurl4-gnutls-dev python3-pycurl-dbg bsd-mailx mail-transport-agent[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: libcurl3-gnutls python3-pycurl python3-software-properties[0m
+[0;32m    virtualbox-iso: software-properties-common unattended-upgrades xz-utils[0m
+[0;32m    virtualbox-iso: 0 upgraded, 6 newly installed, 0 to remove and 51 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 346 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 1,731 kB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libcurl3-gnutls amd64 7.35.0-1ubuntu2.8 [165 kB][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty/main python3-pycurl amd64 7.19.3-0ubuntu3 [47.5 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty/main xz-utils amd64 5.1.1alpha+20120614-2ubuntu2 [78.8 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main unattended-upgrades all 0.82.1ubuntu2.4 [25.9 kB][0m
+[0;32m    virtualbox-iso: Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main python3-software-properties all 0.92.37.7 [19.1 kB][0m
+[0;32m    virtualbox-iso: Get:6 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main software-properties-common all 0.92.37.7 [9,356 B][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 346 kB in 6s (53.0 kB/s)[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libcurl3-gnutls:amd64.[0m
+[0;32m    virtualbox-iso: (Reading database ... 54052 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libcurl3-gnutls_7.35.0-1ubuntu2.8_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.8) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package python3-pycurl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../python3-pycurl_7.19.3-0ubuntu3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking python3-pycurl (7.19.3-0ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package xz-utils.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2ubuntu2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking xz-utils (5.1.1alpha+20120614-2ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package unattended-upgrades.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../unattended-upgrades_0.82.1ubuntu2.4_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking unattended-upgrades (0.82.1ubuntu2.4) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package python3-software-properties.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../python3-software-properties_0.92.37.7_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking python3-software-properties (0.92.37.7) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package software-properties-common.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../software-properties-common_0.92.37.7_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking software-properties-common (0.92.37.7) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: ureadahead will be reprofiled on next reboot[0m
+[0;32m    virtualbox-iso: Setting up libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.8) ...[0m
+[0;32m    virtualbox-iso: Setting up python3-pycurl (7.19.3-0ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Setting up xz-utils (5.1.1alpha+20120614-2ubuntu2) ...[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode[0m
+[0;32m    virtualbox-iso: Setting up unattended-upgrades (0.82.1ubuntu2.4) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Setting up python3-software-properties (0.92.37.7) ...[0m
+[0;32m    virtualbox-iso: Setting up software-properties-common (0.92.37.7) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: ADD REPOSITORY WITH PHP5[0m
+[0;32m    virtualbox-iso: + echo 'ADD REPOSITORY WITH PHP5'[0m
+[0;32m    virtualbox-iso: + sudo add-apt-repository -y ppa:ondrej/php[0m
+[0;32m    virtualbox-iso: gpg: keyring `/tmp/tmpqbqzlehl/secring.gpg' created[0m
+[0;32m    virtualbox-iso: gpg: keyring `/tmp/tmpqbqzlehl/pubring.gpg' created[0m
+[0;32m    virtualbox-iso: gpg: requesting key E5267A6C from hkp server keyserver.ubuntu.com[0m
+[0;32m    virtualbox-iso: gpg: /tmp/tmpqbqzlehl/trustdb.gpg: trustdb created[0m
+[0;32m    virtualbox-iso: gpg: key E5267A6C: public key "Launchpad PPA for Ondřej Surý" imported[0m
+[0;32m    virtualbox-iso: gpg: Total number processed: 1[0m
+[0;32m    virtualbox-iso: gpg:               imported: 1  (RSA: 1)[0m
+[0;32m    virtualbox-iso: OK[0m
+[0;32m    virtualbox-iso: + sudo apt-get update[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security InRelease[0m
+[0;32m    virtualbox-iso: Get:1 http://ppa.launchpad.net trusty InRelease [20.9 kB][0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/main Sources[0m
+[0;32m    virtualbox-iso: Get:2 http://ppa.launchpad.net trusty/main amd64 Packages [44.2 kB][0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty InRelease[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/universe Sources[0m
+[0;32m    virtualbox-iso: Get:3 http://ppa.launchpad.net trusty/main i386 Packages [44.2 kB][0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates InRelease[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Get:4 http://ppa.launchpad.net trusty/main Translation-en [28.1 kB][0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports InRelease[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty Release.gpg[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/main Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/universe Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://security.ubuntu.com trusty-security/universe Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-updates/universe Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty-backports/universe Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty Release[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse Sources[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse amd64 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse i386 Packages[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/main Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/multiverse Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/restricted Translation-en[0m
+[0;32m    virtualbox-iso: Hit http://us.archive.ubuntu.com trusty/universe Translation-en[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/main Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/multiverse Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/restricted Translation-en_US[0m
+[0;32m    virtualbox-iso: Ign http://us.archive.ubuntu.com trusty/universe Translation-en_US[0m
+[0;32m    virtualbox-iso: Fetched 137 kB in 14s (9,664 B/s)[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: INSTALL VIM[0m
+[0;32m    virtualbox-iso: + echo 'INSTALL VIM'[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y vim[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: libgpm2 libpython2.7 vim-runtime[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: gpm ctags vim-doc vim-scripts[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: libgpm2 libpython2.7 vim vim-runtime[0m
+[0;32m    virtualbox-iso: 0 upgraded, 4 newly installed, 0 to remove and 54 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 6,899 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 31.7 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main libgpm2 amd64 1.20.4-6.1 [16.5 kB][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libpython2.7 amd64 2.7.6-8ubuntu0.2 [1,039 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty/main vim-runtime all 2:7.4.052-1ubuntu3 [4,888 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty/main vim amd64 2:7.4.052-1ubuntu3 [956 kB][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 6,899 kB in 18s (368 kB/s)[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libgpm2:amd64.[0m
+[0;32m    virtualbox-iso: (Reading database ... 54172 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libgpm2_1.20.4-6.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libgpm2:amd64 (1.20.4-6.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libpython2.7:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libpython2.7_2.7.6-8ubuntu0.2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libpython2.7:amd64 (2.7.6-8ubuntu0.2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package vim-runtime.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../vim-runtime_2%3a7.4.052-1ubuntu3_all.deb ...[0m
+[0;32m    virtualbox-iso: Adding 'diversion of /usr/share/vim/vim74/doc/help.txt to /usr/share/vim/vim74/doc/help.txt.vim-tiny by vim-runtime'[0m
+[0;32m    virtualbox-iso: Adding 'diversion of /usr/share/vim/vim74/doc/tags to /usr/share/vim/vim74/doc/tags.vim-tiny by vim-runtime'[0m
+[0;32m    virtualbox-iso: Unpacking vim-runtime (2:7.4.052-1ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package vim.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../vim_2%3a7.4.052-1ubuntu3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking vim (2:7.4.052-1ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Setting up libgpm2:amd64 (1.20.4-6.1) ...[0m
+[0;32m    virtualbox-iso: Setting up libpython2.7:amd64 (2.7.6-8ubuntu0.2) ...[0m
+[0;32m    virtualbox-iso: Setting up vim-runtime (2:7.4.052-1ubuntu3) ...[0m
+[0;32m    virtualbox-iso: Processing /usr/share/vim/addons/doc[0m
+[0;32m    virtualbox-iso: Setting up vim (2:7.4.052-1ubuntu3) ...[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor (editor) in auto mode[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: INSTALLING APACHE2 AND PHP5.6[0m
+[0;32m    virtualbox-iso: + echo 'INSTALLING APACHE2 AND PHP5.6'[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y apache2 php5.6 php5.6-mysql mysql-client[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2-bin apache2-data libapache2-mod-php5.6 libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl libdbi-perl[0m
+[0;32m    virtualbox-iso: libmysqlclient18 libssl1.0.2 libterm-readkey-perl mysql-client-5.5[0m
+[0;32m    virtualbox-iso: mysql-client-core-5.5 mysql-common php-common php5.6-cli php5.6-common[0m
+[0;32m    virtualbox-iso: php5.6-json php5.6-opcache php5.6-readline psmisc ssl-cert[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: www-browser apache2-doc apache2-suexec-pristine apache2-suexec-custom ufw[0m
+[0;32m    virtualbox-iso: apache2-utils php-pear libclone-perl libmldbm-perl libnet-daemon-perl[0m
+[0;32m    virtualbox-iso: libplrpc-perl libsql-statement-perl openssl-blacklist[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: apache2 apache2-bin apache2-data libapache2-mod-php5.6 libapr1 libaprutil1[0m
+[0;32m    virtualbox-iso: libaprutil1-dbd-sqlite3 libaprutil1-ldap libdbd-mysql-perl libdbi-perl[0m
+[0;32m    virtualbox-iso: libmysqlclient18 libssl1.0.2 libterm-readkey-perl mysql-client[0m
+[0;32m    virtualbox-iso: mysql-client-5.5 mysql-client-core-5.5 mysql-common php-common php5.6[0m
+[0;32m    virtualbox-iso: php5.6-cli php5.6-common php5.6-json php5.6-mysql php5.6-opcache[0m
+[0;32m    virtualbox-iso: php5.6-readline psmisc ssl-cert[0m
+[0;32m    virtualbox-iso: 0 upgraded, 27 newly installed, 0 to remove and 54 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 12.2 MB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 69.7 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main libssl1.0.2 amd64 1.0.2h-1+deb.sury.org~trusty+1 [1,263 kB][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty/main libapr1 amd64 1.5.0-1 [85.1 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty/main libaprutil1 amd64 1.5.3-1 [76.4 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-common all 5.5.50-0ubuntu0.14.04.1 [12.9 kB][0m
+[0;32m    virtualbox-iso: Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libmysqlclient18 amd64 5.5.50-0ubuntu0.14.04.1 [595 kB][0m
+[0;32m    virtualbox-iso: Get:6 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php-common all 1:44+deb.sury.org~trusty+1 [12.9 kB][0m
+[0;32m    virtualbox-iso: Get:7 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-common amd64 5.6.25-1+deb.sury.org~trusty+1 [2,734 kB][0m
+[0;32m    virtualbox-iso: Get:8 http://us.archive.ubuntu.com/ubuntu/ trusty/main psmisc amd64 22.20-1ubuntu2 [53.2 kB][0m
+[0;32m    virtualbox-iso: Get:9 http://us.archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-dbd-sqlite3 amd64 1.5.3-1 [10.5 kB][0m
+[0;32m    virtualbox-iso: Get:10 http://us.archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-ldap amd64 1.5.3-1 [8,634 B][0m
+[0;32m    virtualbox-iso: Get:11 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-bin amd64 2.4.7-1ubuntu4.13 [839 kB][0m
+[0;32m    virtualbox-iso: Get:12 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-data all 2.4.7-1ubuntu4.13 [160 kB][0m
+[0;32m    virtualbox-iso: Get:13 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main apache2 amd64 2.4.7-1ubuntu4.13 [87.4 kB][0m
+[0;32m    virtualbox-iso: Get:14 http://us.archive.ubuntu.com/ubuntu/ trusty/main libdbi-perl amd64 1.630-1 [879 kB][0m
+[0;32m    virtualbox-iso: Get:15 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-json amd64 5.6.25-1+deb.sury.org~trusty+1 [17.0 kB][0m
+[0;32m    virtualbox-iso: Get:16 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-opcache amd64 5.6.25-1+deb.sury.org~trusty+1 [62.2 kB][0m
+[0;32m    virtualbox-iso: Get:17 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-readline amd64 5.6.25-1+deb.sury.org~trusty+1 [12.5 kB][0m
+[0;32m    virtualbox-iso: Get:18 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-cli amd64 5.6.25-1+deb.sury.org~trusty+1 [1,252 kB][0m
+[0;32m    virtualbox-iso: Get:19 http://us.archive.ubuntu.com/ubuntu/ trusty/main libdbd-mysql-perl amd64 4.025-1 [99.3 kB][0m
+[0;32m    virtualbox-iso: Get:20 http://us.archive.ubuntu.com/ubuntu/ trusty/main libterm-readkey-perl amd64 2.31-1 [27.4 kB][0m
+[0;32m    virtualbox-iso: Get:21 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client-core-5.5 amd64 5.5.50-0ubuntu0.14.04.1 [709 kB][0m
+[0;32m    virtualbox-iso: Get:22 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main libapache2-mod-php5.6 amd64 5.6.25-1+deb.sury.org~trusty+1 [1,208 kB][0m
+[0;32m    virtualbox-iso: Get:23 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client-5.5 amd64 5.5.50-0ubuntu0.14.04.1 [1,594 kB][0m
+[0;32m    virtualbox-iso: Get:24 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6 all 5.6.25-1+deb.sury.org~trusty+1 [256 kB][0m
+[0;32m    virtualbox-iso: Get:25 http://ppa.launchpad.net/ondrej/php/ubuntu/ trusty/main php5.6-mysql amd64 5.6.25-1+deb.sury.org~trusty+1 [139 kB][0m
+[0;32m    virtualbox-iso: Get:26 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client all 5.5.50-0ubuntu0.14.04.1 [11.2 kB][0m
+[0;32m    virtualbox-iso: Get:27 http://us.archive.ubuntu.com/ubuntu/ trusty/main ssl-cert all 1.0.33 [16.6 kB][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 12.2 MB in 18s (665 kB/s)[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libssl1.0.2:amd64.[0m
+[0;32m    virtualbox-iso: (Reading database ... 55808 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libssl1.0.2_1.0.2h-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libssl1.0.2:amd64 (1.0.2h-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libapr1:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libapr1_1.5.0-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libapr1:amd64 (1.5.0-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libaprutil1:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libaprutil1_1.5.3-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libaprutil1:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-common.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-common_5.5.50-0ubuntu0.14.04.1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-common (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libmysqlclient18:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libmysqlclient18_5.5.50-0ubuntu0.14.04.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libmysqlclient18:amd64 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package psmisc.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../psmisc_22.20-1ubuntu2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking psmisc (22.20-1ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.3-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libaprutil1-ldap:amd64.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libaprutil1-ldap_1.5.3-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libaprutil1-ldap:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package apache2-bin.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../apache2-bin_2.4.7-1ubuntu4.13_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking apache2-bin (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package apache2-data.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../apache2-data_2.4.7-1ubuntu4.13_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking apache2-data (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package apache2.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../apache2_2.4.7-1ubuntu4.13_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking apache2 (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php-common.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php-common_1%3a44+deb.sury.org~trusty+1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php-common (1:44+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-common.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-common_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-common (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-json.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-json_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-json (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-opcache.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-opcache_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-opcache (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-readline.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-readline_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-readline (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-cli.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-cli_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-cli (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libapache2-mod-php5.6.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libapache2-mod-php5.6_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libapache2-mod-php5.6 (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libdbi-perl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libdbi-perl_1.630-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libdbi-perl (1.630-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libdbd-mysql-perl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libdbd-mysql-perl_4.025-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libdbd-mysql-perl (4.025-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libterm-readkey-perl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libterm-readkey-perl_2.31-1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libterm-readkey-perl (2.31-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-client-core-5.5.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-client-core-5.5_5.5.50-0ubuntu0.14.04.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-client-core-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-client-5.5.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-client-5.5_5.5.50-0ubuntu0.14.04.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-client-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-client.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-client_5.5.50-0ubuntu0.14.04.1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-client (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6_5.6.25-1+deb.sury.org~trusty+1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6 (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package php5.6-mysql.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../php5.6-mysql_5.6.25-1+deb.sury.org~trusty+1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking php5.6-mysql (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package ssl-cert.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../ssl-cert_1.0.33_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking ssl-cert (1.0.33) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Setting up libssl1.0.2:amd64 (1.0.2h-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Setting up libapr1:amd64 (1.5.0-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libaprutil1:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-common (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up libmysqlclient18:amd64 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up psmisc (22.20-1ubuntu2) ...[0m
+[0;32m    virtualbox-iso: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libaprutil1-ldap:amd64 (1.5.3-1) ...[0m
+[0;32m    virtualbox-iso: Setting up apache2-bin (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Setting up apache2-data (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Setting up apache2 (2.4.7-1ubuntu4.13) ...[0m
+[0;32m    virtualbox-iso: Enabling module mpm_event.[0m
+[0;32m    virtualbox-iso: Enabling module authz_core.[0m
+[0;32m    virtualbox-iso: Enabling module authz_host.[0m
+[0;32m    virtualbox-iso: Enabling module authn_core.[0m
+[0;32m    virtualbox-iso: Enabling module auth_basic.[0m
+[0;32m    virtualbox-iso: Enabling module access_compat.[0m
+[0;32m    virtualbox-iso: Enabling module authn_file.[0m
+[0;32m    virtualbox-iso: Enabling module authz_user.[0m
+[0;32m    virtualbox-iso: Enabling module alias.[0m
+[0;32m    virtualbox-iso: Enabling module dir.[0m
+[0;32m    virtualbox-iso: Enabling module autoindex.[0m
+[0;32m    virtualbox-iso: Enabling module env.[0m
+[0;32m    virtualbox-iso: Enabling module mime.[0m
+[0;32m    virtualbox-iso: Enabling module negotiation.[0m
+[0;32m    virtualbox-iso: Enabling module setenvif.[0m
+[0;32m    virtualbox-iso: Enabling module filter.[0m
+[0;32m    virtualbox-iso: Enabling module deflate.[0m
+[0;32m    virtualbox-iso: Enabling module status.[0m
+[0;32m    virtualbox-iso: Enabling conf charset.[0m
+[0;32m    virtualbox-iso: Enabling conf localized-error-pages.[0m
+[0;32m    virtualbox-iso: Enabling conf other-vhosts-access-log.[0m
+[0;32m    virtualbox-iso: Enabling conf security.[0m
+[0;32m    virtualbox-iso: Enabling conf serve-cgi-bin.[0m
+[0;32m    virtualbox-iso: Enabling site 000-default.[0m
+[0;32m    virtualbox-iso: * Starting web server apache2[0m
+[0;32m    virtualbox-iso: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message[0m
+[0;32m    virtualbox-iso: *[0m
+[0;32m    virtualbox-iso: Setting up php-common (1:44+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Setting up php5.6-common (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/calendar.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/ctype.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/exif.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/fileinfo.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/ftp.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/gettext.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/iconv.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/pdo.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/phar.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/posix.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/shmop.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/sockets.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/sysvmsg.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/sysvsem.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/sysvshm.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/tokenizer.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up php5.6-json (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/json.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up php5.6-opcache (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/opcache.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up php5.6-readline (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/readline.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up php5.6-cli (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/php5.6 to provide /usr/bin/php (php) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/phar5.6 to provide /usr/bin/phar (phar) in auto mode[0m
+[0;32m    virtualbox-iso: update-alternatives: using /usr/bin/phar.phar5.6 to provide /usr/bin/phar.phar (phar.phar) in auto mode[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/cli/php.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up libapache2-mod-php5.6 (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/apache2/php.ini with new version[0m
+[0;32m    virtualbox-iso: Module mpm_event disabled.[0m
+[0;32m    virtualbox-iso: Enabling module mpm_prefork.[0m
+[0;32m    virtualbox-iso: apache2_switch_mpm Switch to prefork[0m
+[0;32m    virtualbox-iso: * Restarting web server apache2[0m
+[0;32m    virtualbox-iso: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message[0m
+[0;32m    virtualbox-iso: ...done.[0m
+[0;32m    virtualbox-iso: apache2_invoke: Enable module php5.6[0m
+[0;32m    virtualbox-iso: * Restarting web server apache2[0m
+[0;32m    virtualbox-iso: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message[0m
+[0;32m    virtualbox-iso: ...done.[0m
+[0;32m    virtualbox-iso: Setting up libdbi-perl (1.630-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libdbd-mysql-perl (4.025-1) ...[0m
+[0;32m    virtualbox-iso: Setting up libterm-readkey-perl (2.31-1) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-client-core-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-client-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-client (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up php5.6 (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: Setting up php5.6-mysql (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/mysql.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/mysqlnd.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/mysqli.ini with new version[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: Creating config file /etc/php/5.6/mods-available/pdo_mysql.ini with new version[0m
+[0;32m    virtualbox-iso: Setting up ssl-cert (1.0.33) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for libapache2-mod-php5.6 (5.6.25-1+deb.sury.org~trusty+1) ...[0m
+[0;32m    virtualbox-iso: + echo 'INSERT DIRECTORY ROOT TO DEFAULT APACHE CONFIG'[0m
+[0;32m    virtualbox-iso: INSERT DIRECTORY ROOT TO DEFAULT APACHE CONFIG[0m
+[0;32m    virtualbox-iso: + sudo sed -i s/html/WordPress/g /etc/apache2/sites-available/000-default.conf[0m
+[0;32m    virtualbox-iso: + echo 'INSTALLING MYSQL-SERVER with password root'[0m
+[0;32m    virtualbox-iso: + sudo echo 'mysql-server mysql-server/root_password password root'[0m
+[0;32m    virtualbox-iso: INSTALLING MYSQL-SERVER with password root[0m
+[0;32m    virtualbox-iso: + sudo debconf-set-selections[0m
+[0;32m    virtualbox-iso: + sudo echo 'mysql-server mysql-server/root_password_again password root'[0m
+[0;32m    virtualbox-iso: + sudo debconf-set-selections[0m
+[0;32m    virtualbox-iso: + sudo apt-get -y install mysql-server[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: libaio1 libhtml-template-perl mysql-server-5.5 mysql-server-core-5.5[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: libipc-sharedcache-perl tinyca mailx[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: libaio1 libhtml-template-perl mysql-server mysql-server-5.5[0m
+[0;32m    virtualbox-iso: mysql-server-core-5.5[0m
+[0;32m    virtualbox-iso: 0 upgraded, 5 newly installed, 0 to remove and 54 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 5,684 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 53.5 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main libaio1 amd64 0.3.109-4 [6,364 B][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server-core-5.5 amd64 5.5.50-0ubuntu0.14.04.1 [3,730 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server-5.5 amd64 5.5.50-0ubuntu0.14.04.1 [1,871 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty/main libhtml-template-perl all 2.95-1 [65.5 kB][0m
+[0;32m    virtualbox-iso: Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server all 5.5.50-0ubuntu0.14.04.1 [11.3 kB][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 5,684 kB in 18s (314 kB/s)[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libaio1:amd64.[0m
+[0;32m    virtualbox-iso: (Reading database ... 56913 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libaio1_0.3.109-4_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libaio1:amd64 (0.3.109-4) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-server-core-5.5.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-server-core-5.5_5.5.50-0ubuntu0.14.04.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-server-core-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-server-5.5.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-server-5.5_5.5.50-0ubuntu0.14.04.1_amd64.deb ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: Unpacking mysql-server-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package libhtml-template-perl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../libhtml-template-perl_2.95-1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking libhtml-template-perl (2.95-1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package mysql-server.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../mysql-server_5.5.50-0ubuntu0.14.04.1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking mysql-server (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Setting up libaio1:amd64 (0.3.109-4) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-server-core-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-server-5.5 (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: 160826 20:10:54 [Warning] Using unique option prefix key_buffer instead of key_buffer_size is deprecated and will be removed in a future release. Please use the full name instead.[0m
+[0;32m    virtualbox-iso: 160826 20:10:54 [Note] /usr/sbin/mysqld (mysqld 5.5.50-0ubuntu0.14.04.1) starting as process 12311 ...[0m
+[0;32m    virtualbox-iso: mysql start/running, process 12442[0m
+[0;32m    virtualbox-iso: Setting up libhtml-template-perl (2.95-1) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Setting up mysql-server (5.5.50-0ubuntu0.14.04.1) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for libc-bin (2.19-0ubuntu6.7) ...[0m
+[0;32m    virtualbox-iso: + sudo mysql -uroot -proot -e 'CREATE DATABASE wordpress;'[0m
+[0;32m    virtualbox-iso: + sudo mysql -uroot -proot -e 'CREATE USER wordpressuser@'\''localhost'\'' IDENTIFIED BY '\''password'\'';'[0m
+[0;32m    virtualbox-iso: + sudo mysql -uroot -proot -e 'GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@'\''localhost'\'' IDENTIFIED BY '\''password'\'';'[0m
+[0;32m    virtualbox-iso: + sudo mysql -uroot -proot -e 'FLUSH PRIVILEGES;'[0m
+[0;32m    virtualbox-iso: + echo 'RESTART MYSQL'[0m
+[0;32m    virtualbox-iso: RESTART MYSQL[0m
+[0;32m    virtualbox-iso: + sudo service mysql restart[0m
+[0;32m    virtualbox-iso: mysql stop/waiting[0m
+[0;32m    virtualbox-iso: + echo 'Install git'[0m
+[0;32m    virtualbox-iso: + sudo apt-get install -y git[0m
+[0;32m    virtualbox-iso: mysql start/running, process 12567[0m
+[0;32m    virtualbox-iso: Install git[0m
+[0;32m    virtualbox-iso: Reading package lists...[0m
+[0;32m    virtualbox-iso: Building dependency tree...[0m
+[0;32m    virtualbox-iso: Reading state information...[0m
+[0;32m    virtualbox-iso: The following extra packages will be installed:[0m
+[0;32m    virtualbox-iso: git-man liberror-perl rsync[0m
+[0;32m    virtualbox-iso: Suggested packages:[0m
+[0;32m    virtualbox-iso: git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk[0m
+[0;32m    virtualbox-iso: gitweb git-arch git-bzr git-cvs git-mediawiki git-svn[0m
+[0;32m    virtualbox-iso: The following NEW packages will be installed:[0m
+[0;32m    virtualbox-iso: git git-man liberror-perl rsync[0m
+[0;32m    virtualbox-iso: 0 upgraded, 4 newly installed, 0 to remove and 54 not upgraded.[0m
+[0;32m    virtualbox-iso: Need to get 3,589 kB of archives.[0m
+[0;32m    virtualbox-iso: After this operation, 22.6 MB of additional disk space will be used.[0m
+[0;32m    virtualbox-iso: Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main rsync amd64 3.1.0-2ubuntu0.2 [284 kB][0m
+[0;32m    virtualbox-iso: Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB][0m
+[0;32m    virtualbox-iso: Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.3 [699 kB][0m
+[0;32m    virtualbox-iso: Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.3 [2,586 kB][0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Dialog[0m
+[0;32m    virtualbox-iso: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: unable to initialize frontend: Readline[0m
+[0;32m    virtualbox-iso: debconf: (This frontend requires a controlling tty.)[0m
+[0;32m    virtualbox-iso: debconf: falling back to frontend: Teletype[0m
+[0;32m    virtualbox-iso: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;32m    virtualbox-iso: Fetched 3,589 kB in 14s (253 kB/s)[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package rsync.[0m
+[0;32m    virtualbox-iso: (Reading database ... 57110 files and directories currently installed.)[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../rsync_3.1.0-2ubuntu0.2_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking rsync (3.1.0-2ubuntu0.2) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package liberror-perl.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking liberror-perl (0.17-1.1) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package git-man.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.3_all.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking git-man (1:1.9.1-1ubuntu0.3) ...[0m
+[0;32m    virtualbox-iso: Selecting previously unselected package git.[0m
+[0;32m    virtualbox-iso: Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.3_amd64.deb ...[0m
+[0;32m    virtualbox-iso: Unpacking git (1:1.9.1-1ubuntu0.3) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: Setting up rsync (3.1.0-2ubuntu0.2) ...[0m
+[0;32m    virtualbox-iso: Removing any system startup links for /etc/init.d/rsync ...[0m
+[0;32m    virtualbox-iso: update-rc.d: warning: default stop runlevel arguments (0 1 6) do not match rsync Default-Stop values (none)[0m
+[0;32m    virtualbox-iso: Adding system startup for /etc/init.d/rsync ...[0m
+[0;32m    virtualbox-iso: /etc/rc0.d/K20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc1.d/K20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc6.d/K20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc2.d/S20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc3.d/S20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc4.d/S20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: /etc/rc5.d/S20rsync -> ../init.d/rsync[0m
+[0;32m    virtualbox-iso: Setting up liberror-perl (0.17-1.1) ...[0m
+[0;32m    virtualbox-iso: Setting up git-man (1:1.9.1-1ubuntu0.3) ...[0m
+[0;32m    virtualbox-iso: Setting up git (1:1.9.1-1ubuntu0.3) ...[0m
+[0;32m    virtualbox-iso: Processing triggers for ureadahead (0.100.0-16) ...[0m
+[0;32m    virtualbox-iso: + echo 'Install WORDPRESS from GitHub'[0m
+[0;32m    virtualbox-iso: + sudo git clone https://github.com/WordPress/WordPress.git /var/www/WordPress[0m
+[0;32m    virtualbox-iso: Install WORDPRESS from GitHub[0m
+[0;32m    virtualbox-iso: Cloning into '/var/www/WordPress'...[0m
+[0;32m    virtualbox-iso: + sudo rm -rf /var/www/WordPress/.git[0m
+[0;32m    virtualbox-iso: + sudo cp /var/www/WordPress/wp-config-sample.php /var/www/WordPress/wp-config.php[0m
+[0;32m    virtualbox-iso: SET CONFIG IN WP-CONFIG.PHP[0m
+[0;32m    virtualbox-iso: + echo 'SET CONFIG IN WP-CONFIG.PHP'[0m
+[0;32m    virtualbox-iso: + sudo sed -i s/database_name_here/wordpress/g /var/www/WordPress/wp-config.php[0m
+[0;32m    virtualbox-iso: + sudo sed -i s/username_here/wordpressuser/g /var/www/WordPress/wp-config.php[0m
+[0;32m    virtualbox-iso: + sudo sed -i s/password_here/password/g /var/www/WordPress/wp-config.php[0m
+[0;32m    virtualbox-iso: + echo 'RESTART APACHE2'[0m
+[0;32m    virtualbox-iso: RESTART APACHE2[0m
+[0;32m    virtualbox-iso: + sudo service apache2 restart[0m
+[0;32m    virtualbox-iso: * Restarting web server apache2[0m
+[0;32m    virtualbox-iso: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message[0m
+[0;32m    virtualbox-iso: ...done.[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/init.sh[0m
+[0;32m    virtualbox-iso: + sudo sed -i -e 's,^\(ACTIVE_CONSOLES="/dev/tty\).*,\11",' /etc/default/console-setup[0m
+[0;32m    virtualbox-iso: + for f in '/etc/init/tty[^1]*.conf'[0m
+[0;32m    virtualbox-iso: + sudo mv /etc/init/tty2.conf /etc/init/tty2.conf.bak[0m
+[0;32m    virtualbox-iso: + for f in '/etc/init/tty[^1]*.conf'[0m
+[0;32m    virtualbox-iso: + sudo mv /etc/init/tty3.conf /etc/init/tty3.conf.bak[0m
+[0;32m    virtualbox-iso: + for f in '/etc/init/tty[^1]*.conf'[0m
+[0;32m    virtualbox-iso: + sudo mv /etc/init/tty4.conf /etc/init/tty4.conf.bak[0m
+[0;32m    virtualbox-iso: + for f in '/etc/init/tty[^1]*.conf'[0m
+[0;32m    virtualbox-iso: + sudo mv /etc/init/tty5.conf /etc/init/tty5.conf.bak[0m
+[0;32m    virtualbox-iso: + for f in '/etc/init/tty[^1]*.conf'[0m
+[0;32m    virtualbox-iso: + sudo mv /etc/init/tty6.conf /etc/init/tty6.conf.bak[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/common/vagrant.sh[0m
+[0;32m    virtualbox-iso: + + sudo tee /etc/vagrant_box_build_time[0m
+[0;32m    virtualbox-iso: date[0m
+[0;32m    virtualbox-iso: Fri Aug 26 20:19:18 UTC 2016[0m
+[0;32m    virtualbox-iso: + mkdir -p /home/vagrant/.ssh[0m
+[0;32m    virtualbox-iso: + curl -fsSLo /home/vagrant/.ssh/authorized_keys https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub[0m
+[0;32m    virtualbox-iso: + chmod 700 /home/vagrant/.ssh/[0m
+[0;32m    virtualbox-iso: + chmod 600 /home/vagrant/.ssh/authorized_keys[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/common/sshd.sh[0m
+[0;32m    virtualbox-iso: + sudo tee -a /etc/ssh/sshd_config[0m
+[0;32m    virtualbox-iso:[0m
+[0;32m    virtualbox-iso: UseDNS no[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/ubuntu/cleanup.sh[0m
+[0;32m    virtualbox-iso: + sudo apt-get clean[0m
+[1;32m==> virtualbox-iso: Provisioning with shell script: scripts/common/minimize.sh[0m
+[0;32m    virtualbox-iso: + sudo dd if=/dev/zero of=/EMPTY bs=1M[0m
+[0;32m    virtualbox-iso: dd: error writing ‘/EMPTY’: No space left on device[0m
+[0;32m    virtualbox-iso: 35737+0 records in[0m
+[0;32m    virtualbox-iso: 35736+0 records out[0m
+[0;32m    virtualbox-iso: 37472120832 bytes (37 GB) copied, 135.545 s, 276 MB/s[0m
+[0;32m    virtualbox-iso: + :[0m
+[0;32m    virtualbox-iso: + sudo rm /EMPTY[0m
+[0;32m    virtualbox-iso: + sudo /sbin/blkid -t TYPE=swap -o value -s UUID[0m
+[0;32m    virtualbox-iso: + uniq[0m
+[0;32m    virtualbox-iso: + swap_device_uuid=0590584d-e770-44c3-9447-f60fc5b4f23d[0m
+[0;32m    virtualbox-iso: + uniq[0m
+[0;32m    virtualbox-iso: + sudo /sbin/blkid -t TYPE=swap -o value -s LABEL[0m
+[0;32m    virtualbox-iso: + swap_device_label=[0m
+[0;32m    virtualbox-iso: + [ -n 0590584d-e770-44c3-9447-f60fc5b4f23d ][0m
+[0;32m    virtualbox-iso: + readlink -f /dev/disk/by-uuid/0590584d-e770-44c3-9447-f60fc5b4f23d[0m
+[0;32m    virtualbox-iso: + swap_device=/dev/sda2[0m
+[0;32m    virtualbox-iso: + sudo /sbin/swapoff /dev/sda2[0m
+[0;32m    virtualbox-iso: + sudo dd if=/dev/zero of=/dev/sda2 bs=1M[0m
+[0;32m    virtualbox-iso: dd: error writing ‘/dev/sda2’: No space left on device[0m
+[0;32m    virtualbox-iso: 2048+0 records in[0m
+[0;32m    virtualbox-iso: 2047+0 records out[0m
+[0;32m    virtualbox-iso: 2146435072 bytes (2.1 GB) copied, 7.817 s, 275 MB/s[0m
+[0;32m    virtualbox-iso: + :[0m
+[0;32m    virtualbox-iso: + sudo /sbin/mkswap -U 0590584d-e770-44c3-9447-f60fc5b4f23d /dev/sda2[0m
+[0;32m    virtualbox-iso: Setting up swapspace version 1, size = 2096124 KiB[0m
+[0;32m    virtualbox-iso: no label, UUID=0590584d-e770-44c3-9447-f60fc5b4f23d[0m
+[1;32m==> virtualbox-iso: Gracefully halting virtual machine...[0m
+[1;32m==> virtualbox-iso: Preparing to export machine...[0m
+[0;32m    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 4072)[0m
+[1;32m==> virtualbox-iso: Exporting virtual machine...[0m
+[0;32m    virtualbox-iso: Executing: export packer-ubuntu-14.04-amd64 --output output-ubuntu-14.04-amd64-virtualbox-iso/packer-ubuntu-14.04-amd64.ovf[0m
+[1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+[1;32m==> virtualbox-iso: Running post-processor: vagrant[0m
+[1;32m==> virtualbox-iso (vagrant): Creating Vagrant box for 'virtualbox' provider[0m
+[0;32m    virtualbox-iso (vagrant): Copying from artifact: output-ubuntu-14.04-amd64-virtualbox-iso/packer-ubuntu-14.04-amd64-disk1.vmdk[0m
+[0;32m    virtualbox-iso (vagrant): Copying from artifact: output-ubuntu-14.04-amd64-virtualbox-iso/packer-ubuntu-14.04-amd64.ovf[0m
+[0;32m    virtualbox-iso (vagrant): Renaming the OVF to box.ovf...[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: Vagrantfile[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: box.ovf[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: metadata.json[0m
+[0;32m    virtualbox-iso (vagrant): Compressing: packer-ubuntu-14.04-amd64-disk1.vmdk[0m
+[1;32mBuild 'virtualbox-iso' finished.[0m
+
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox-iso: 'virtualbox' provider box: vagrant-ubuntu-14.04virtualbox.box

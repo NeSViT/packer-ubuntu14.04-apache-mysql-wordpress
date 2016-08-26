@@ -1,0 +1,102 @@
+{
+
+  "_comment": "====================================BUILDERS==================================",
+  "_comment": "type: set type of vm builder",
+  "_comment": "guest_os_type: set the virtualbox type of os, will use for VB-tools",
+  "_comment": "iso_url, iso_checksum, iso_checksum_type, disk_size, head-less: use user  variable in variables",
+  "_comment": "output_directory: path to output packer file after post-processing",
+  "_comment": "http_directory: path to the folder and folder that uses in directive preseed/url", 
+  "_comment": "boot_wait: how long wait in boot_command. It looks like <wait>", 
+  "_comment": "ssh_username and ssh_password for connecting to VM after install", 
+  "_comment": "shutdown_command: command to shutdown VM", 
+  "_comment": "vboxmanage: array with parameters for VM, that uses virtualbox",
+  
+  "builders": [{
+    "type": "virtualbox-iso",
+    "guest_os_type": "Ubuntu_64",
+    "iso_url": "{{user `mirror`}}",
+    "iso_checksum": "{{user `iso_checksum`}}",
+    "iso_checksum_type": "{{user `iso_checksum_type`}}",
+    "output_directory": "output-ubuntu-14.04-amd64-{{build_type}}",
+    "vm_name": "packer-ubuntu-14.04-amd64",
+    "disk_size": "{{user `disk_size`}}",
+    "headless": "{{user `headless`}}",
+    "http_directory": "http",
+    "boot_wait": "5s",
+    "boot_command": [
+      "<esc><wait>",
+      "<esc><wait>",
+      "<enter><wait>",
+      "/install/vmlinuz ",
+      "initrd=/install/initrd.gz ",
+      "biosdevname=0 ",
+      "auto-install/enable=true ",
+      "debconf/priority=critical ",
+      "preseed/url=http://{{.HTTPIP}}:{{.HTTPPort}}/ubuntu-14.04/preseed.cfg ",
+      "<enter>"
+    ],
+    "ssh_timeout": "{{user `ssh_timeout`}}",
+    "ssh_username": "vagrant",
+    "ssh_password": "vagrant",
+    "shutdown_command": "sudo poweroff",
+    "vboxmanage": [
+      ["modifyvm", "{{.Name}}", "--memory", "{{user `memory`}}"],
+      ["modifyvm", "{{.Name}}", "--cpus", "{{user `cpus`}}"]
+    ]
+  }],
+
+  "_comment": "====================================/BUILDERS=================================",
+
+  "_comment": "====================================PROVISIONERS==============================",
+  "_comment": "type: using bash",
+  "_comment": "scripts: scripts for deploy",
+
+  "provisioners": [{
+    "type": "shell",
+    "scripts": [
+      
+      "scripts/ubuntu/virtualbox.sh",
+      "scripts/ubuntu/webserver_config.sh",
+      "scripts/ubuntu/init.sh",
+      "scripts/common/vagrant.sh",
+      "scripts/common/sshd.sh",
+      "scripts/ubuntu/cleanup.sh",
+      "scripts/common/minimize.sh"
+    ]
+  }],
+
+  "_comment": "====================================/PROVISIONERS==============================",
+
+  "_comment": "====================================POST-PROCESSORS==========================",
+
+  "post-processors": [{
+    "type": "vagrant",
+    "compression_level": "{{user `compression_level`}}",
+    "output": "vagrant-ubuntu-14.04{{.Provider}}.box"
+  }],
+
+  "_comment": "====================================POST-PROCESSORS==========================",
+
+  "_comment": "====================================VARIABLES=================================",
+  "_comment": "VARIABLES",
+  "_comment": "compression_level: Set compression level for vagrant box on the output. Default is 6",
+  "_comment": "cpus: number of cpu",
+  "_comment": "disk_size: default 40G",
+  "_comment": "headless: false -  while build process the packer will open virtual-box console and shown user the process of build, if true the console won't be open",
+  "_comment": "iso_checksum and iso_checksum_type: md5sum for iso file and type of checksum",
+  "_comment": "mirror: it can be http, local or network path to the iso file",
+  "_comment": "ssh_timeout: how long time packer before start post-processors level",
+
+  "variables": {
+    "compression_level": "6",
+    "cpus": "2",
+    "disk_size": "40000",
+    "headless": "false",
+    "iso_checksum": "2ac1f3e0de626e54d05065d6f549fa3a",
+    "iso_checksum_type": "md5",
+    "memory": "1024",
+    "mirror": "/home/nesvits/Documents/Web-academy/soft/iso/ubuntu-14.04.4-server-amd64.iso",
+    "ssh_timeout": "60m"
+  },
+  "_comment": "===================================/VARIABLES================================="
+}

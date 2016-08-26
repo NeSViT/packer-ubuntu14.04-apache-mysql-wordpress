@@ -7,27 +7,26 @@ Project based on https://github.com/kaorimatz/packer-templates
 
 Project files: 
 
-├── 14.04.log
-├── http
-│   ├── ubuntu
-│   │   └── preseed.cfg
-│   └── ubuntu-14.04
-│       └── preseed.cfg
-├── README.md
-├── scripts
-│   ├── common
-│   │   ├── minimize.sh
-│   │   ├── sshd.sh
-│   │   └── vagrant.sh
-│   └── ubuntu
-│       ├── apt.sh
-│       ├── cleanup.sh
-│       ├── init.sh
-│       ├── virtualbox.sh
-│       └── webserver_config.sh
-├── ubuntu-14.04-amd64.json
-└── Vagrantfile
-
+├── 14.04.log																			
+├── http																			
+│   ├── ubuntu																			
+│   │   └── preseed.cfg																			
+│   └── ubuntu-14.04																			
+│       └── preseed.cfg																			
+├── README.md																			
+├── scripts																			
+│   ├── common																			
+│   │   ├── minimize.sh																			
+│   │   ├── sshd.sh																			
+│   │   └── vagrant.sh																			
+│   └── ubuntu																			
+│       ├── apt.sh																			
+│       ├── cleanup.sh																			
+│       ├── init.sh																			
+│       ├── virtualbox.sh																			
+│       └── webserver_config.sh																			
+├── ubuntu-14.04-amd64.json																			
+└── Vagrantfile																			
 
 Description: 
 

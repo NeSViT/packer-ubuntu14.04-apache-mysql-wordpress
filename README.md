@@ -31,8 +31,11 @@ Project files:
 Description: 
 
 http: contains preseeds for unattended Ubuntu 14.04 installation.
+
 scripts: here 1 custom script that called webserver_config.sh. I added lots of comments inside. 
+
 ubuntu-14.04-amd64.json: packer-template and it's also commented inside.
+
 Vagrantfile: simple Vagrantfile with few lines of shell script that download wp cli to skip greating message and generate 10 posts with Lorem Ipsum text.
 
 Key words: packer, vagrant, virtualbox, apache2, wordpress, mysql.

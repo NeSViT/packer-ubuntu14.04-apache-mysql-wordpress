@@ -20,7 +20,6 @@ Project files:
 │   │   ├── sshd.sh																			
 │   │   └── vagrant.sh																			
 │   └── ubuntu																			
-│       ├── apt.sh																			
 │       ├── cleanup.sh																			
 │       ├── init.sh																			
 │       ├── virtualbox.sh																			

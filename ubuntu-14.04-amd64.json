@@ -53,8 +53,7 @@
 
   "provisioners": [{
     "type": "shell",
-    "scripts": [
-      
+    "scripts": [      
       "scripts/ubuntu/virtualbox.sh",
       "scripts/ubuntu/webserver_config.sh",
       "scripts/ubuntu/init.sh",
